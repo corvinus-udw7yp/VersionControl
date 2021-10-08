@@ -34,6 +34,7 @@ namespace UserMaintenance
             this.btnAdd = new System.Windows.Forms.Button();
             this.txtFullName = new System.Windows.Forms.TextBox();
             this.btnSave = new System.Windows.Forms.Button();
+            this.btnRemove_Click = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // listUsers
@@ -80,11 +81,22 @@ namespace UserMaintenance
             this.btnSave.UseVisualStyleBackColor = true;
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
+            // btnRemove_Click
+            // 
+            this.btnRemove_Click.Location = new System.Drawing.Point(82, 154);
+            this.btnRemove_Click.Name = "btnRemove_Click";
+            this.btnRemove_Click.Size = new System.Drawing.Size(75, 23);
+            this.btnRemove_Click.TabIndex = 6;
+            this.btnRemove_Click.Text = "button3";
+            this.btnRemove_Click.UseVisualStyleBackColor = true;
+            this.btnRemove_Click.Click += new System.EventHandler(this.btnRemove_Click_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnRemove_Click);
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.txtFullName);
             this.Controls.Add(this.btnAdd);
@@ -104,6 +116,7 @@ namespace UserMaintenance
         private System.Windows.Forms.Button btnAdd;
         private System.Windows.Forms.TextBox txtFullName;
         private System.Windows.Forms.Button btnSave;
+        private System.Windows.Forms.Button btnRemove_Click;
     }
 }
 

@@ -64,5 +64,10 @@ namespace UserMaintenance
                 }
             }
         }
+
+        private void btnRemove_Click_Click(object sender, EventArgs e)
+        {
+            //...
+        }
     }
 }
