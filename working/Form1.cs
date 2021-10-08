@@ -81,7 +81,7 @@ namespace working
             };
             for (int i = 0; i < headers.Length; i++)
             {
-                xlSheet.Cells[1, 1] = headers[0];
+                xlSheet.Cells[1, i+1] = headers[i];
             }
             object[,] values = new object[Flats.Count, headers.Length];
 
@@ -90,6 +90,20 @@ namespace working
             {
                 values[counter, 0] = f.Code;
                 // ...
+                values[counter, 1] = f.Vendor;
+                values[counter, 2] = f.Side;
+                values[counter, 3] = f.District;
+                if (f.Elevator)
+                {
+                    values[counter, 4] = "Van";
+                }
+                else
+                {
+                    values[counter, 4] = "Nincs";
+                }
+                values[counter, 5] = f.NumberOfRooms;
+                values[counter, 6] = f.FloorArea;
+                values[counter, 7] = f.Price;
                 values[counter, 8] = "";
                 counter++;
             }
