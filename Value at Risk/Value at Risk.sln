@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31729.503
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Value at Risk", "Value at Risk\Value at Risk.csproj", "{8B7A6643-02E7-468D-9DD4-D1DDF5F42B5F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8B7A6643-02E7-468D-9DD4-D1DDF5F42B5F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8B7A6643-02E7-468D-9DD4-D1DDF5F42B5F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8B7A6643-02E7-468D-9DD4-D1DDF5F42B5F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8B7A6643-02E7-468D-9DD4-D1DDF5F42B5F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {011849D3-3374-4DC3-897F-AD401B234613}
+	EndGlobalSection
+EndGlobal
