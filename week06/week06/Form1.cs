@@ -25,6 +25,7 @@ namespace week06
         public Form1()
         {
             InitializeComponent();
+            comboBox1.SelectedIndex = 0;
 
             dgw.DataSource = Rates;
             comboBox1.DataSource = Currencies;
@@ -75,6 +76,7 @@ namespace week06
                 //currencyNames = "EUR",
                 //startDate = "2020-01-01",
                 //endDate = "2020-06-30"
+                
                 currencyNames = comboBox1.SelectedItem.ToString(),
                 startDate = dateTimePicker1.Value.ToString(),
                 endDate = dateTimePicker2.Value.ToString()
