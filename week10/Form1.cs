@@ -189,7 +189,7 @@ namespace week10
 
         private void btnStart_Click(object sender, EventArgs e)
         {
-            Simulation(labelNepessegFajl.Text, numericUpDownZaroev.Value);
+            Simulation(textBoxNepessegFajl.Text, numericUpDownZaroev.Value);
             DisplayResults(numericUpDownZaroev.Value);
         }
 
@@ -215,8 +215,12 @@ namespace week10
             ofd.AddExtension = true; // Ha ez igaz, akkor hozzáírja a megadott fájlnévhez a kiválasztott kiterjesztést, de érzékeli, ha a felhasználó azt is beírta és nem fogja duplán hozzáírni
 
             // Ez a sor megnyitja a dialógus ablakot és csak akkor engedi tovább futni a kódot, ha az ablakot az OK gombbal zárták be
-            if (ofd.ShowDialog() != DialogResult.OK) labelNepessegFajl.Text = ofd.FileName;
-                
+            //if (ofd.ShowDialog() != DialogResult.OK) textBoxNepessegFajl.Text = ofd.FileName;
+            ofd.ShowDialog();
+            textBoxNepessegFajl.Text = ofd.FileName;
+
+
+
         }
 
         private void labelNepessegFajl_Click(object sender, EventArgs e)
